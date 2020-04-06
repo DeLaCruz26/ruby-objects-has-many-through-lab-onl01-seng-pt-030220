@@ -10,3 +10,5 @@ attr_accessor :name, :artist, :genre
     @genre = genre
     @@all << self
   end
+
+end
