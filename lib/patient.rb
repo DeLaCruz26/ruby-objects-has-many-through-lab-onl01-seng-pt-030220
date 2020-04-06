@@ -17,4 +17,8 @@ attr_accessor :name
     Appointment.new(Doctor, self, date)
   end
 
+  def appointments
+    Appointment.all.select do |appt|
+      appt.patient == self
+
 end
