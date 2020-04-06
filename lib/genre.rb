@@ -18,4 +18,5 @@ attr_accessor :name
       song.genre == self
     end
   end
+  
 end
