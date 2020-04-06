@@ -24,4 +24,5 @@ attr_accessor :name
       song.artist
     end
   end
+  
 end
