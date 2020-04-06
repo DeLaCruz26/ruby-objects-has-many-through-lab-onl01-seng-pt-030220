@@ -22,5 +22,11 @@ attr_accessor :name
   def new_appointment(Patient, date)
     Appointment.new(Patient, self, date)
   end
+
+  def patients
+    appointments.map do |appt|
+      appt.patient
+    end
+  end
   
 end
