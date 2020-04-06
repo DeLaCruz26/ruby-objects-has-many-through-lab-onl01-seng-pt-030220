@@ -20,5 +20,7 @@ attr_accessor :name
   def appointments
     Appointment.all.select do |appt|
       appt.patient == self
+    end
+  end
 
 end
