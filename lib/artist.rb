@@ -23,4 +23,10 @@ attr_accessor :name
     Song.new(self, name, genre)
   end
 
+  def genres
+    songs.map do |song|
+      song.genre
+    end
+  end
+
 end
