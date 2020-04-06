@@ -13,4 +13,7 @@ attr_accessor :name
     @@all
   end
 
+  def new_appointment(doctor, date)
+    Appointment.new(Doctor, self, date)
+
 end
