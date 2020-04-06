@@ -19,7 +19,7 @@ attr_accessor :name
     end
   end
 
-  def new_appointment(Patient, date)
+  def new_appointment(patient, date)
     Appointment.new(Patient, self, date)
   end
 
@@ -28,5 +28,5 @@ attr_accessor :name
       appt.patient
     end
   end
-  
+
 end
