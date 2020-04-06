@@ -24,7 +24,7 @@ attr_accessor :name
   end
 
   def patients
-    Appointment.all.map do |appt|
+    appointments.map do |appt|
       appt.patient
     end
   end
