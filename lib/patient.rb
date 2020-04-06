@@ -25,7 +25,7 @@ attr_accessor :name
 
   def doctors
     appointments.map do |appt|
-      appt.doctors
+      appt.doctor
     end
   end
 
