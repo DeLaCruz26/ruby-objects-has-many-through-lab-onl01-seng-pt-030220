@@ -12,4 +12,8 @@ attr_accessor :name
   def self.all
     @@all
   end
+
+  def appointments
+    Appointment.all.select do |appt|
+      appt.doctor == self
 end
